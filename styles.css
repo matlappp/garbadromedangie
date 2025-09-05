@@ -294,7 +294,7 @@ h1 {
     flex-direction: column;
     gap: 0.3rem;
 }
-.second-wrap {
+.separate {
     background-color: #EEEEEE;
 }
 footer {
@@ -444,5 +444,6 @@ footer .max-container {
     }
 
 }
+
 
 
