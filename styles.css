@@ -1,0 +1,435 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+    resize: none;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+ul:not(.start-form ul, .prix ul) {
+    padding-left: 0;
+    list-style: none;
+}
+#root, #__next {
+    isolation: isolate;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoSemi;
+    src: url(./fonts/Roboto-SemiBold.ttf);
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoExtra;
+    src: url(./fonts/Roboto-ExtraBold.ttf);
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100dvh;
+    background-color: #FFFFFF;
+    color: #212427;
+    font-family: Roboto;
+}
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    display: flex;
+    padding: 2rem 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    transition: box-shadow 0.3s ease;
+    z-index: 3;
+}
+.sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.header.scrolled {
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.logo-wrap {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.main-logo {
+    max-height: 70px;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    gap: 0.5rem;
+}
+.navbar-ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.navbar-ul a {
+    text-decoration: none;
+    color: #212427;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+.navbar-ul a:hover {
+    color: #18876A;
+}
+.bg-btn {
+    background-color: #18876A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 1rem 1.5rem;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: max-content;
+    color: #FFFFFF !important;
+    font-weight: 500 !important;
+}
+.bg-btn:hover {
+    background-color: #098161;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 100%;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem 4rem;
+    width: 100%;
+}
+section .max-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+}
+.hero-img img {
+    opacity: 0.4
+}
+.hero-main {
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+}
+.hero-wrap {
+    position: absolute;
+    width: 90%;
+    align-items: center;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.hero-p {
+    font-family: RobotoBold;
+    font-size: 3rem;
+    line-height: 1.6em;
+    text-align: center;
+}
+.hero-img {
+    width: 100%;
+}
+.hero-img img {
+    object-fit: cover;
+    object-position: center;
+    max-height: 600px;
+    min-height: 400px;
+    width: 100%;
+}
+section h2 {
+    font-size: 3rem;
+    position: relative;
+    font-family: RobotoSemi;
+}
+section h2:before {
+    content: '';
+    position: absolute;
+    top: -22px;
+    left: 0;
+    width: 50px;
+    height: 5px;
+    background-image: -webkit-linear-gradient(45deg, #098161 15%, #18876A 65%);
+    background-image: linear-gradient(45deg, #098161 15%, #18876A 65%);
+}
+section p:not(.hero-p) {
+    color: #6F6F6F;
+    font-size: 1rem;
+}
+#hero {
+    padding: 0;
+}
+h1 {
+    font-size: 6rem;
+    text-align: center;
+    font-family: RobotoExtra;
+    color: #18876A;
+    word-wrap: break-word;
+}
+#services {
+    gap: 1rem;
+    background-color: #ffffff;
+}
+#services .max-container {
+    gap: 2rem;
+}
+.services-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+.filters-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#filters {
+    padding: 0.5rem 0.8rem;
+}
+.plats {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.plate-cell {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;
+    padding: 1rem;
+}
+.plate-img {
+    appearance: none;
+    background-color: #0000001c;
+    aspect-ratio: 5 / 4;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 100%;
+    width: 30%;
+    overflow: hidden;
+}
+.plate-img img {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.plate-main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+.plate-main h3 {
+    font-size: 1.5rem;
+}
+.plate-main p {
+    line-height: 1.4em;
+}
+.prix {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: auto;
+}
+.prix span {
+    font-family: RobotoBold;
+}
+.prix ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+footer {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 7rem 4rem;
+    width: 100%;
+    border-top: 1px solid #a0a0a0;
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer a {
+    text-decoration: none;
+    color: #212427;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+footer .max-container {
+    max-width: 1200px;
+    width: 100%;
+}
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.footer-img img {
+    max-height: 150px;
+}
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.contact-ul a:nth-child(1),
+.contact-ul a:nth-child(2) {
+    font-family: RobotoSemi;
+}
+.contact-ul a:nth-child(1):hover,
+.contact-ul a:nth-child(2):hover {
+    color: #18876A;
+}
+.footer-services li {
+    border: 1px solid #555555;
+    color: #555555;
+    border-radius: 2px;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+.footer-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+@media (max-width: 992px) {
+    .plate-cell {
+        flex-direction: column;
+    }
+    .plate-cell > div {
+        width: 100%;
+    }
+}
+@media (min-width: 600px) and (max-width: 1023px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+    .hero-wrap {
+        gap: 1.5rem;
+    }
+    .hero-p {
+        font-size: 2rem;
+    }
+    .footer-main {
+        flex-direction: column;
+        gap: 4rem;
+    }
+}
+@media (max-width: 600px) {
+    .sidebar {
+        width: 100%;
+        right: -100%;
+    }
+    h1 {
+        font-size: 3.6rem;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .hero-p {
+        font-size: 1.1rem;
+    }
+    .credit-ul svg {
+        min-width: 36px;
+        max-width: 36px;
+    }
+    section, footer {
+        padding: 5rem 2.5rem;
+    }
+    .main-logo {
+        max-height: 60px;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    .footer-main, .footer-nav, .footer-cell, footer ul  {
+        align-items: center;
+    }
+    .navbar-ul a {
+        font-size: 1rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
+@media (max-width: 480px) {
+    .navbar-ul a {
+        font-size: 1rem;
+        padding: 0.6rem 1.1rem;
+    }
+}
+@media (max-width: 360px) {
+    h1 {
+        font-size: 3rem;
+    }
+    .hero-p {
+        font-size: 1rem;
+    }
+    .navbar-ul a {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
