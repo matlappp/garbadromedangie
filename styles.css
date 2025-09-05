@@ -294,13 +294,16 @@ h1 {
     flex-direction: column;
     gap: 0.3rem;
 }
+.second-wrap {
+    background-color: #EEEEEE;
+}
 footer {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     padding: 7rem 4rem;
     width: 100%;
-    border-top: 1px solid #a0a0a0;
+    border-top: 1px solid #A0A0A0;
 }
 footer ul {
     display: flex;
@@ -441,4 +444,5 @@ footer .max-container {
     }
 
 }
+
 
