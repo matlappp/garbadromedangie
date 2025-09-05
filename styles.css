@@ -297,6 +297,16 @@ h1 {
 .separate {
     background-color: #EEEEEE;
 }
+.separate-main, .separate-img {
+    display: flex;
+    width: 100%;
+}
+.separate-img img {
+    object-fit: cover;
+    object-position: center;
+    max-height: 600px;
+    width: 100%;
+}
 footer {
     background-color: #FFFFFF;
     display: flex;
@@ -444,6 +454,7 @@ footer .max-container {
     }
 
 }
+
 
 
 
