@@ -179,7 +179,7 @@ section .max-container {
     object-fit: cover;
     object-position: center;
     max-height: 600px;
-    min-height: 400px;
+    min-height: 500px;
     width: 100%;
 }
 section h2 {
@@ -441,3 +441,4 @@ footer .max-container {
     }
 
 }
+
