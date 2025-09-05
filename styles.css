@@ -359,6 +359,13 @@ footer .max-container {
     .plate-cell > div {
         width: 100%;
     }
+    .hero-p {
+        font-size: 2.5rem;
+    }
+    .bg-btn {
+        padding: 0.8rem 1.3rem;
+        font-size: 0.95rem;
+    }
 }
 @media (min-width: 600px) and (max-width: 1023px) {
     .cards {
@@ -432,4 +439,5 @@ footer .max-container {
         font-size: 0.9rem;
         padding: 0.5rem 1rem;
     }
+
 }
