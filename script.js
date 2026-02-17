@@ -37,4 +37,8 @@ function updateFilter() {
 }
 
 filterSelect.addEventListener('change', updateFilter);
+
 updateFilter();
+
+const yearSpan = document.getElementById('year');
+yearSpan.textContent = new Date().getFullYear();
